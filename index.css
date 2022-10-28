@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.website-title {
+    font-size: 1.5rem;
+    margin: 2.5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 2.5rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+    .flexbox-about {
+        display: inline-block;
+        padding: 40px;
+    }
+
+
+    .flexbox-skills {
+        display: inline;
+        /*justify-content: space-between;*/
+        color: black;
+        padding: 40px;
+        width: 50%;
+        margin:40px;
+        border: 3px;
+
+    }
+
+
+    /*.flexbox-item-skills {
+        font-weight: bold;
+        text-align: center;
+        margin:40px;
+        border: 3px;
+        padding: 50px;
+        line-height: 1;
+    }*/
+
+    .flexbox-skills-icons ul {
+        display: flex;
+        margin: 120px;
+        padding: 10px;
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        
+    }
+
+    .flexbox-skills-icons img:hover {
+        background-color: #F5F5F5;
+    }
+
+    .flexbox-container-3 {
+        width: 50%;
+        margin:40px;
+        border: 3px;
+        display: flex;
+    }
+
+    .flexbox-item-projects-4 {
+        width: 50%;
+        margin:40px;
+        border: 3px;
+        display: flex;
+    }
+
+    .flexbox-item-contact {
+        width: 50%;
+        margin:40px;
+        border: 3px;
+        display: block;
+    }
+
+    .btn-background-slide {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: white;
+        height: 50px;
+        width: 200px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: bold;
+        box-shadow: 0px 2px;
+        border-collapse: collapse;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .btn-background-slide:active{
+        background-color: transparent;
+        margin-top: 24px;
+        margin-bottom: 8px;
+        box-shadow: 0px 0px;
+        background-color: #555;
+        color: white;
+    }
+    
