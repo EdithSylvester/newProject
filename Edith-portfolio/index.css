@@ -134,6 +134,7 @@ body {
 
     .flexbox-skills-icons img:hover {
         background-color: #F5F5F5;
+        transform: scale(1.5);
     }
 
     .flexbox-container-3 {
